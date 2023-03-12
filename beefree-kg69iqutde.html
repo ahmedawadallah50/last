@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-menu .bee-hamburger-controls span,
+		.bee-row-1 .bee-row-content,
+		.bee-row-10,
+		.bee-row-11,
+		.bee-row-13,
+		.bee-row-14,
+		.bee-row-16,
+		.bee-row-19,
+		.bee-row-2,
+		.bee-row-20,
+		.bee-row-23,
+		.bee-row-24,
+		.bee-row-25,
+		.bee-row-26,
+		.bee-row-28,
+		.bee-row-29,
+		.bee-row-31,
+		.bee-row-33,
+		.bee-row-4,
+		.bee-row-5,
+		.bee-row-6,
+		.bee-row-7,
+		.bee-row-8,
+		.bee-row-9 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-3 .bee-row-content {
+			background-position: top center
+		}
+
+		body {
+			background-color: #fff;
+			color: #000;
+			font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 li a,
+		.bee-row-32 .bee-col-1 .bee-block-6 li a,
+		a {
+			color: #605d55
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.bee-menu .bee-hamburger-trigger {
+			display: none
+		}
+
+		.bee-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content.reverse,
+		.bee-row-content.reverse .bee-col {
+			-moz-transform: scale(1, -1);
+			-webkit-transform: scale(1, -1);
+			-o-transform: scale(1, -1);
+			-ms-transform: scale(1, -1);
+			transform: scale(1, -1)
+		}
+
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 17%
+		}
+
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
+		}
+
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33%
+		}
+
+		.bee-row-content .bee-col-w5 {
+			flex-basis: 42%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-button .content {
+			text-align: center
+		}
+
+		.bee-button a,
+		.bee-icon .bee-icon-label-right a,
+		.bee-menu ul li a {
+			text-decoration: none
+		}
+
+		.bee-divider,
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-divider .center,
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-divider .right,
+		.bee-image .bee-right {
+			float: right
+		}
+
+		.bee-row-18 .bee-col-1 .bee-block-1,
+		.bee-row-18 .bee-col-2 .bee-block-1,
+		.bee-row-18 .bee-col-3 .bee-block-1,
+		.bee-row-22 .bee-col-2 .bee-block-1,
+		.bee-row-22 .bee-col-3 .bee-block-1,
+		.bee-row-28 .bee-col-2 .bee-block-1,
+		.bee-row-28 .bee-col-3 .bee-block-1,
+		.bee-row-3 .bee-col-2 .bee-block-1,
+		.bee-row-32 .bee-col-1 .bee-block-2,
+		.bee-row-6 .bee-col-1 .bee-block-1,
+		.bee-row-6 .bee-col-2 .bee-block-1,
+		.bee-row-6 .bee-col-3 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-list ul,
+		.bee-menu ul {
+			margin: 0;
+			padding: 0
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-menu .bee-hamburger-controls {
+			cursor: pointer;
+			display: inline-block;
+			position: relative
+		}
+
+		.bee-menu .bee-hamburger-controls span {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-size: 100%;
+			transition: .12s ease-in-out
+		}
+
+		.bee-menu ul {
+			list-style-type: none
+		}
+
+		.bee-menu ul.bee-horizontal li {
+			display: inline-block
+		}
+
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
+		.bee-text {
+			overflow-wrap: anywhere
+		}
+
+		.bee-row-1,
+		.bee-row-17,
+		.bee-row-21,
+		.bee-row-3 {
+			background-color: #fff;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content {
+			background-color: #c2b59e;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-1 {
+			padding-top: 25px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			padding-bottom: 5px;
+			padding-top: 5px;
+			width: 100%
+		}
+
+		.bee-row-1 .bee-col-3 {
+			padding-top: 40px
+		}
+
+		.bee-row-1 .bee-col-3 .bee-block-1 {
+			color: #fff;
+			font-family: inherit;
+			font-size: 15px;
+			text-align: center
+		}
+
+		.bee-row-10 .bee-row-content,
+		.bee-row-11 .bee-row-content,
+		.bee-row-13 .bee-row-content,
+		.bee-row-14 .bee-row-content,
+		.bee-row-16 .bee-row-content,
+		.bee-row-19 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-20 .bee-row-content,
+		.bee-row-23 .bee-row-content,
+		.bee-row-24 .bee-row-content,
+		.bee-row-25 .bee-row-content,
+		.bee-row-26 .bee-row-content,
+		.bee-row-28 .bee-row-content,
+		.bee-row-29 .bee-row-content,
+		.bee-row-31 .bee-row-content,
+		.bee-row-32 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-color: #fff;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-3 .bee-row-content,
+		.bee-row-4 .bee-row-content {
+			background-color: #e2d7c7;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-11 .bee-col-1,
+		.bee-row-14 .bee-col-1,
+		.bee-row-16 .bee-col-1,
+		.bee-row-16 .bee-col-2,
+		.bee-row-16 .bee-col-3,
+		.bee-row-16 .bee-col-4,
+		.bee-row-18 .bee-col-1,
+		.bee-row-18 .bee-col-2,
+		.bee-row-18 .bee-col-3,
+		.bee-row-19 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-20 .bee-col-1,
+		.bee-row-20 .bee-col-2,
+		.bee-row-20 .bee-col-3,
+		.bee-row-20 .bee-col-4,
+		.bee-row-22 .bee-col-1,
+		.bee-row-22 .bee-col-4,
+		.bee-row-23 .bee-col-1,
+		.bee-row-24 .bee-col-1,
+		.bee-row-24 .bee-col-2,
+		.bee-row-24 .bee-col-3,
+		.bee-row-24 .bee-col-4,
+		.bee-row-25 .bee-col-1,
+		.bee-row-26 .bee-col-1,
+		.bee-row-28 .bee-col-1,
+		.bee-row-28 .bee-col-4,
+		.bee-row-29 .bee-col-1,
+		.bee-row-31 .bee-col-1,
+		.bee-row-31 .bee-col-2,
+		.bee-row-31 .bee-col-3,
+		.bee-row-31 .bee-col-4,
+		.bee-row-33 .bee-col-1,
+		.bee-row-4 .bee-col-1,
+		.bee-row-5 .bee-col-1,
+		.bee-row-7 .bee-col-1,
+		.bee-row-9 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-12 .bee-col-1,
+		.bee-row-15 .bee-col-1,
+		.bee-row-17 .bee-col-1,
+		.bee-row-21 .bee-col-1,
+		.bee-row-27 .bee-col-1,
+		.bee-row-3 .bee-col-1,
+		.bee-row-30 .bee-col-1 {
+			border-bottom: 0 solid #fffeff;
+			border-left: 0 solid #fffeff;
+			border-right: 0px solid #fffeff;
+			border-top: 0 solid #fffeff
+		}
+
+		.bee-row-13 .bee-col-1 .bee-block-1,
+		.bee-row-13 .bee-col-2 .bee-block-1,
+		.bee-row-13 .bee-col-3 .bee-block-1,
+		.bee-row-16 .bee-col-3 .bee-block-2,
+		.bee-row-17 .bee-col-1 .bee-block-2,
+		.bee-row-20 .bee-col-2 .bee-block-2,
+		.bee-row-21 .bee-col-1 .bee-block-2,
+		.bee-row-24 .bee-col-3 .bee-block-2,
+		.bee-row-28 .bee-col-2 .bee-block-3,
+		.bee-row-28 .bee-col-3 .bee-block-3,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-3 .bee-col-1 .bee-block-5,
+		.bee-row-31 .bee-col-2 .bee-block-1,
+		.bee-row-8 .bee-col-2 .bee-block-1,
+		.bee-row-8 .bee-col-3 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-2 {
+			padding: 5px 20px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-12 .bee-col-1 .bee-block-2,
+		.bee-row-15 .bee-col-1 .bee-block-2,
+		.bee-row-3 .bee-col-1 .bee-block-3,
+		.bee-row-30 .bee-col-1 .bee-block-2 {
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-28 .bee-col-2,
+		.bee-row-28 .bee-col-3,
+		.bee-row-3 .bee-col-1 .bee-block-4 {
+			padding: 5px 10px
+		}
+
+		.bee-row-13 .bee-col-1 .bee-block-3,
+		.bee-row-13 .bee-col-1 .bee-block-5,
+		.bee-row-13 .bee-col-2 .bee-block-3,
+		.bee-row-13 .bee-col-2 .bee-block-5,
+		.bee-row-13 .bee-col-3 .bee-block-3,
+		.bee-row-13 .bee-col-3 .bee-block-5,
+		.bee-row-16 .bee-col-3 .bee-block-3,
+		.bee-row-20 .bee-col-2 .bee-block-3,
+		.bee-row-24 .bee-col-3 .bee-block-3,
+		.bee-row-28 .bee-col-2 .bee-block-4,
+		.bee-row-28 .bee-col-2 .bee-block-5,
+		.bee-row-28 .bee-col-3 .bee-block-4,
+		.bee-row-28 .bee-col-3 .bee-block-5,
+		.bee-row-3 .bee-col-1 .bee-block-7,
+		.bee-row-8 .bee-col-2 .bee-block-2,
+		.bee-row-8 .bee-col-3 .bee-block-2 {
+			padding: 10px 20px
+		}
+
+		.bee-row-32 .bee-col-1,
+		.bee-row-6 .bee-col-1,
+		.bee-row-6 .bee-col-2,
+		.bee-row-6 .bee-col-3 {
+			padding-bottom: 10px;
+			padding-top: 10px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1,
+		.bee-row-10 .bee-col-2 .bee-block-1,
+		.bee-row-10 .bee-col-3 .bee-block-1,
+		.bee-row-13 .bee-col-1 .bee-block-7,
+		.bee-row-13 .bee-col-2 .bee-block-7,
+		.bee-row-13 .bee-col-3 .bee-block-7,
+		.bee-row-14 .bee-col-1 .bee-block-2,
+		.bee-row-19 .bee-col-1 .bee-block-2,
+		.bee-row-23 .bee-col-1 .bee-block-2,
+		.bee-row-25 .bee-col-1 .bee-block-2,
+		.bee-row-28 .bee-col-2 .bee-block-7,
+		.bee-row-28 .bee-col-3 .bee-block-7 {
+			padding: 10px 20px;
+			text-align: center
+		}
+
+		.bee-row-16 .bee-col-2 .bee-block-1,
+		.bee-row-20 .bee-col-3 .bee-block-1,
+		.bee-row-24 .bee-col-2 .bee-block-1,
+		.bee-row-27 .bee-col-1 .bee-block-2 {
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 100%
+		}
+
+		.bee-row-12,
+		.bee-row-15,
+		.bee-row-27,
+		.bee-row-30 {
+			background-color: #fff;
+			background-repeat: no-repeat;
+			background-size: auto
+		}
+
+		.bee-row-12 .bee-row-content,
+		.bee-row-15 .bee-row-content,
+		.bee-row-27 .bee-row-content,
+		.bee-row-30 .bee-row-content {
+			background-color: #fff;
+			background-repeat: no-repeat;
+			background-size: auto;
+			color: #000
+		}
+
+		.bee-row-17 .bee-row-content,
+		.bee-row-21 .bee-row-content {
+			background-color: #fff;
+			background-position: center top;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-18,
+		.bee-row-22 {
+			background-color: #fff;
+			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6641/bg-gallery-lp.png');
+			background-position: center top;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-18 .bee-row-content,
+		.bee-row-22 .bee-row-content,
+		.bee-row-33 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-3 .bee-block-1 li,
+		.bee-row-22 .bee-col-2,
+		.bee-row-22 .bee-col-3,
+		.bee-row-31 .bee-col-2 .bee-block-2,
+		.bee-row-32 .bee-col-1 .bee-block-6 li {
+			padding: 10px
+		}
+
+		.bee-row-27 .bee-col-1 .bee-block-2 {
+			text-align: center
+		}
+
+		.bee-row-31 .bee-col-3 .bee-block-1 {
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 100%
+		}
+
+		.bee-row-32 {
+			background-position: top center;
+			background-repeat: repeat
+		}
+
+		.bee-row-32 .bee-col-1 .bee-block-4 {
+			padding: 10px 30px
+		}
+
+		.bee-row-32 .bee-col-1 .bee-block-5 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-32 .bee-col-1 .bee-block-6 {
+			color: #605d55;
+			font-family: inherit;
+			font-size: 15px;
+			text-align: center
+		}
+
+		.bee-row-33 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-3 .bee-block-1 li a {
+			color: #fff
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 {
+			color: #605d55;
+			direction: ltr;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 ul {
+			list-style-type: disc;
+			list-style-position: inside
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 li:not(:last-child) {
+			margin-bottom: 0
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 li ul {
+			margin-top: 0
+		}
+
+		.bee-row-31 .bee-col-2 .bee-block-2 li li {
+			margin-left: 40px
+		}
+
+		.bee-row-33 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-33 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-33 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		@media (max-width:768px) {
+			.bee-menu ul.with-bee-hamburger {
+				display: none;
+				padding: 5px 0;
+				position: relative;
+				top: -4px
+			}
+
+			.bee-menu ul.with-bee-hamburger li {
+				display: block;
+				text-align: center
+			}
+
+			.bee-menu ul.with-bee-hamburger li a {
+				text-decoration: none
+			}
+
+			.bee-menu ul.with-bee-hamburger span {
+				display: none
+			}
+
+			#bee-hamburger-memu-r0c2m0:checked~ul,
+			#bee-hamburger-memu-r31c0m5:checked~ul,
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 .bee-hamburger-controls,
+			.bee-row-32 .bee-col-1 .bee-block-6 .bee-hamburger-controls {
+				width: 36px;
+				height: 36px;
+				background-color: transparent;
+				border-radius: 0
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 .bee-hamburger-controls span,
+			.bee-row-32 .bee-col-1 .bee-block-6 .bee-hamburger-controls span {
+				width: 18px;
+				height: 18px
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(1)
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(0)
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 ul.with-bee-hamburger,
+			.bee-row-32 .bee-col-1 .bee-block-6 ul.with-bee-hamburger {
+				background-color: transparent
+			}
+
+			.bee-row-1 .bee-col-3 .bee-block-1 ul.with-bee-hamburger li,
+			.bee-row-1 .bee-col-3 .bee-block-1 ul.with-bee-hamburger li a {
+				color: #fff
+			}
+
+			#bee-hamburger-memu-r0c2m0:checked~.bee-hamburger-controls .bee-hamburger-open,
+			#bee-hamburger-memu-r31c0m5:checked~.bee-hamburger-controls .bee-hamburger-open {
+				transform: translate(-50%, -50%) scaleY(0)
+			}
+
+			#bee-hamburger-memu-r0c2m0:checked~.bee-hamburger-controls .bee-hamburger-close,
+			#bee-hamburger-memu-r31c0m5:checked~.bee-hamburger-controls .bee-hamburger-close {
+				transform: translate(-50%, -50%) scaleY(1)
+			}
+
+			.bee-row-32 .bee-col-1 .bee-block-6 .bee-hamburger-controls span.bee-hamburger-open {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjA1ZDU1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(1)
+			}
+
+			.bee-row-32 .bee-col-1 .bee-block-6 .bee-hamburger-controls span.bee-hamburger-close {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjA1ZDU1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(0)
+			}
+
+			.bee-row-32 .bee-col-1 .bee-block-6 ul.with-bee-hamburger li,
+			.bee-row-32 .bee-col-1 .bee-block-6 ul.with-bee-hamburger li a {
+				color: #605d55
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="bee-page-container">
+<div class="bee-row bee-row-1">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w3">
+<div class="bee-block bee-block-1 bee-image"><img alt="Your Logo" class="bee-center bee-autowidth" src="images/Artboard_16.png" style="max-width:101px;"/></div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:25px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w5">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-menu">
+<nav class="bee-menu"><input class="bee-hamburger-trigger" id="bee-hamburger-memu-r0c2m0" type="checkbox"/><label class="bee-hamburger-controls" for="bee-hamburger-memu-r0c2m0"><span class="bee-hamburger-open"></span><span class="bee-hamburger-close"></span></label>
+<ul class="bee-horizontal with-bee-hamburger">
+<li><a href="http://www.example.com" target="_self" title="">Opening Hours</a></li>
+<li><a href="http://www.example.com" target="_self" title="">Blog</a></li>
+<li>Location</li>
+<li><a href="http://www.example.com" target="_self" title="">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:50px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:16px;font-weight:400;letter-spacing:6px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">VISIT<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:40px;font-weight:400;letter-spacing:3px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;">ABSTRACT<br/> </h1>
+</div>
+<div class="bee-block bee-block-4 bee-divider">
+<div class="center bee-separator" style="border-top:3px solid #605D55;width:25%;"></div>
+</div>
+<div class="bee-block bee-block-5 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:22px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">WORLD ART DAY<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:50px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </span></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w6">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman In Front Of An Abstract Painting" class="bee-right bee-autowidth" src="images/phot-1-lp.png" style="max-width:668px;"/></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-4">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-5">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-6">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Abstract Black Sculpture" class="bee-center bee-autowidth" src="images/Artboard-181.png" style="max-width:305px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Metal Lines Art Installation" class="bee-center bee-autowidth" src="images/photo-2-lp.png" style="max-width:305px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Gallery With Paintings" class="bee-center bee-autowidth" src="images/photo-3-lp.png" style="max-width:305px;"/></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-7">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-8">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w3">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w3">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">WHEN<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">20-29.05.2022</span><br style=""/><span style="font-size: 22px; line-height: 33px;">18:00h</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w3">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">WHERE<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">Art Gallery Name<br style=""/>24 Street, City</span></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w3">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-9">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:15px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">INTERESTED?<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:15px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-10">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w4">
+<div class="bee-block bee-block-1 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #605d55; border-bottom: 0px solid #FFFFFF; border-left: 0px solid #FFFFFF; border-radius: 0px; border-right: 0px solid #FFFFFF; border-top: 0px solid #FFFFFF; color: #ffffff; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 35px; padding-right: 35px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">YES</span></strong></span></a></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">MAYBE</span></strong></span></a></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 35px; padding-right: 35px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">NO</span></strong></span></a></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-11">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-12">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:22px;font-weight:400;letter-spacing:3px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">BOOK YOUR TICKETS<br/></span></strong> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:50px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-13">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w4">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">20.05.2022<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">1 TICKET<br style=""/>20$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">2 TICKETS<br style=""/>35$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">BOOK NOW</span></strong></span></a></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">21.05.2022<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">1 TICKET<br style=""/>20$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">2 TICKETS<br style=""/>35$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">BOOK NOW</span></strong></span></a></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">22.05.2022<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">1 TICKET<br style=""/>20$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">2 TICKETS<br style=""/>35$</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:10px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">BOOK NOW</span></strong></span></a></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-14">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">MORE DATES</span></strong></span></a></div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-15">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:22px;font-weight:400;letter-spacing:3px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">ARTISTS<br/></span></strong> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-16">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman Leaning On An Easle" class="bee-center bee-autowidth" src="images/Artboard_25.png" style="max-width:249px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Artist Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: left;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </span></p>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-17">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Artist's Recent Work<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-18">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman Sitting On Stairs In Art Studio" class="bee-center bee-autowidth" src="images/1-lp.png" style="max-width:432px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman Sculpting On Canvas" class="bee-center bee-autowidth" src="images/2-lp.png" style="max-width:432px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman In Front Of Her Artworks" class="bee-center bee-autowidth" src="images/3-lp.png" style="max-width:432px;"/></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-19">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">SEE MORE WORK</span></strong></span></a></div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-20">
+<div class="bee-row-content reverse">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:right;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Artist Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: right;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </span></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Man In Front Of A Lighting Art Installation" class="bee-center bee-autowidth" src="images/Artboard_26.png" style="max-width:249px;"/></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-21">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Artist's Recent Work<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-22">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Ring Lights Art Installation" class="bee-center bee-autowidth" src="images/ph-3-lp.png" style="max-width:460px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Person In Front Of Lights Art Installation" class="bee-center bee-autowidth" src="images/ph-4-lp.png" style="max-width:460px;"/></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-23">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">SEE MORE WORK</span></strong></span></a></div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-24">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Woman Touchin A Sculpture" class="bee-center bee-autowidth" src="images/Artboard_27.png" style="max-width:249px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Artist Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: left;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </span></p>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-25">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">DISCOVER MORE ARTISTS</span></strong></span></a></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-26">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-27">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:22px;font-weight:400;letter-spacing:3px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">UPCOMING EXHIBITS<br/></span></strong> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-28">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Art Gallery Wall With Paintings" class="bee-center bee-fixedwidth" src="images/exhib-1-lp.png" style="max-width:345px;"/></div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Exhbition Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </span></p>
+</div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">20-29.05.2022 | </span><span style="font-size: 22px; line-height: 33px;">18:00h</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">LEARN MORE</span></strong></span></a></div>
+<div class="bee-block bee-block-8 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img alt="Paper Cranes Art Installation" class="bee-center bee-fixedwidth" src="images/exhib-2-lp.png" style="max-width:345px;"/></div>
+<div class="bee-block bee-block-2 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Exhibition Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 16px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </span></p>
+</div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 150%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="font-size: 14px; line-height: 21px; text-align: center;"><span style="font-size: 22px; line-height: 33px;">20-29.05.2022 | </span><span style="font-size: 22px; line-height: 33px;">18:00h</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-button"><a class="bee-button-content" href="http://www.example.com" style="font-size: 12px; background-color: #ffffff; border-bottom: 2px solid #605D55; border-left: 2px solid #605D55; border-radius: 0px; border-right: 2px solid #605D55; border-top: 2px solid #605D55; color: #605d55; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight: 400; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; direction: ltr; display: inline-block;" target="_self"><span style="font-size: 12px; word-break: break-word; line-height: 200%;"><strong><span style="font-size:16px;">LEARN MORE</span></strong></span></a></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-29">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-30">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:22px;font-weight:400;letter-spacing:3px;line-height:150%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">GETTING TO US<br/></span></strong> </h1>
+</div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-31">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w3">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w3">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="color:#605d55;direction:ltr;font-family:'Merriwheater', 'Georgia', serif;font-size:24px;font-weight:400;letter-spacing:2px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Gallery Name<br/></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-list">
+<ul start="1">
+<li>by car<br/><br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ma</li>
+<li>by bus<br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ma<br/><br/></li>
+<li>by train<br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ma</li>
+</ul>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w3">
+<div class="bee-block bee-block-1 bee-image"><img alt="Building Exterior Photo" class="bee-center bee-autowidth" src="images/gallery-lp.png" style="max-width:330px;"/></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w3">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-32">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:40px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img alt="Your Logo" class="bee-center bee-autowidth" src="images/drak-logo.png" style="max-width:116px;"/></div>
+<div class="bee-block bee-block-3 bee-spacer">
+<div class="spacer" style="height:15px;"></div>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 180%; font-size: 12px; font-family: inherit; color: #605d55;">
+<p style="text-align: center; line-height: 21px;"><span style="line-height: 21px;"><span style="font-size: 16px; line-height: 28px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span><span style="font-size: 16px; line-height: 28px;">Aenean commodo ligula eget dolor. Aenean massa. </span></span></p>
+</div>
+</div>
+<div class="bee-block bee-block-5 bee-social">
+<div class="content"><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.facebook.com/" target="_self"><img alt="Facebook" src="images/facebook2x.png" title="facebook"/></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.twitter.com/" target="_self"><img alt="Twitter" src="images/twitter2x.png" title="twitter"/></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.linkedin.com/" target="_self"><img alt="Linkedin" src="images/linkedin2x.png" title="linkedin"/></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.instagram.com/" target="_self"><img alt="Instagram" src="images/instagram2x.png" title="instagram"/></a></span></div>
+</div>
+<div class="bee-block bee-block-6 bee-menu">
+<nav class="bee-menu"><input class="bee-hamburger-trigger" id="bee-hamburger-memu-r31c0m5" type="checkbox"/><label class="bee-hamburger-controls" for="bee-hamburger-memu-r31c0m5"><span class="bee-hamburger-open"></span><span class="bee-hamburger-close"></span></label>
+<ul class="bee-horizontal with-bee-hamburger">
+<li><a href="http://www.example.com" target="_self" title="">Opening Hours</a></li>
+<li><a href="http://www.example.com" target="_self" title="">Blog</a></li>
+<li>Location</li>
+<li><a href="http://www.example.com" target="_self" title="">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="bee-block bee-block-7 bee-spacer">
+<div class="spacer" style="height:40px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-33">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-icons">
+<div class="bee-icon bee-icon-last">
+<div class="bee-content">
+<div class="bee-icon-image"><a href="https://www.designedwithbee.com/" target="_blank" title="Designed with BEE"><img alt="Designed with BEE" height="32px" src="images/bee.png" width="auto"/></a></div>
+<div class="bee-icon-label bee-icon-label-right"><a href="https://www.designedwithbee.com/" target="_blank" title="Designed with BEE">Designed with BEE</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
